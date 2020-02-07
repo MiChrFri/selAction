@@ -1,10 +1,11 @@
 import UIKit
 import RealmSwift
 
-class QuestionListViewController: UIViewController {
-  private let questionDataStore = QuestionDataStore()
+class CandidateListViewController: UIViewController {
+  private let candidateDataStore = CandidateDataStore()
+  
   private let realm = try! Realm()
-  private var questions: [Question] = []
+  private var candidates: [Candidate] = []
   private var tableView: UITableView = {
     let tableView = UITableView()
     tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -14,6 +15,7 @@ class QuestionListViewController: UIViewController {
   init() {
     super.init(nibName: nil, bundle: nil)
     
+    populateWitDummyCandidates()
     self.addUI()
     self.addConstraints()
   }
@@ -25,20 +27,15 @@ class QuestionListViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    populateWitDummyQuestions()
+    loadCandidates()
     
     self.view.backgroundColor = .lightGray
     
     tableView.register(UITableViewCell.self, forCellReuseIdentifier: "DefaultCell")
   }
   
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-    loadQuestions()
-  }
-  
   private func addUI() {
-    self.title = "Questions"
+    self.title = "Candidates"
     
     self.view.addSubview(tableView)
     tableView.delegate = self
@@ -63,12 +60,12 @@ class QuestionListViewController: UIViewController {
     ])
   }
   
-  private func loadQuestions() {
-    questions = questionDataStore.load()
+  private func loadCandidates() {
+    candidates = candidateDataStore.load()
     tableView.reloadData()
   }
   
-  private func populateWitDummyQuestions() {
+  private func populateWitDummyCandidates() {
     
     try? realm.write {
       realm.deleteAll()
@@ -78,25 +75,26 @@ class QuestionListViewController: UIViewController {
     let q2 = Question(title: "CS - Q2", question: "What's the complexity of finding an entry in a hashMap?")
     let q3 = Question(title: "CS - Q3", question: "What's 1001 as a decimal number?")
     let q4 = Question(title: "iOS - Q1", question: "What's the differnce between frame and bounds?")
+        
+    let c1 = Candidate(name: "Mika", position: "iOS Ninja", questions: [q1, q2, q3, q4])
+    let c2 = Candidate(name: "Steve", position: "Father of Apple", questions: [q2])
     
-    let rq1 = RealmQuestion.build(q1)
-    let rq2 = RealmQuestion.build(q2)
-    let rq3 = RealmQuestion.build(q3)
-    let rq4 = RealmQuestion.build(q4)
+    let rc1 = RealmCandidate.build(c1)
+    let rc2 = RealmCandidate.build(c2)
     
-    questionDataStore.save([rq1, rq2, rq3, rq4])
+    candidateDataStore.save([rc1, rc2])
   }
-  
+    
 }
 
-extension QuestionListViewController: UITableViewDelegate, UITableViewDataSource {
+extension CandidateListViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return questions.count
+    return candidates.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "DefaultCell")!
-    cell.textLabel?.text = questions[indexPath.row].title
+    cell.textLabel?.text = candidates[indexPath.row].name
     
     cell.textLabel?.font = Fonts.default
     
@@ -106,8 +104,8 @@ extension QuestionListViewController: UITableViewDelegate, UITableViewDataSource
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-    let qVc = QuestionViewController(with: questions[indexPath.row])
-    self.splitViewController?.show(qVc, sender: nil)
+    let cVc = CandidateViewController(with: candidates[indexPath.row])
+    self.splitViewController?.showDetailViewController(cVc, sender: candidates[indexPath.row])
   }
   
 }

@@ -25,6 +25,11 @@
 		79EB8D6123DC5DBC003CE4E7 /* CreateQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EB8D6023DC5DBC003CE4E7 /* CreateQuestionViewController.swift */; };
 		79EB8D6323DC63BD003CE4E7 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EB8D6223DC63BD003CE4E7 /* Fonts.swift */; };
 		79EB8D6523DC6614003CE4E7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EB8D6423DC6614003CE4E7 /* StartViewController.swift */; };
+		79EEA16623ECA3010098997B /* CandidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EEA16523ECA3010098997B /* CandidateViewController.swift */; };
+		79EEA16823ECA36B0098997B /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EEA16723ECA36B0098997B /* Candidate.swift */; };
+		79EEA16A23ECA3BE0098997B /* RealmCadidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EEA16923ECA3BE0098997B /* RealmCadidate.swift */; };
+		79EEA16D23ECA50B0098997B /* CandidateDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EEA16C23ECA50B0098997B /* CandidateDataStore.swift */; };
+		79EEA16F23ECAA980098997B /* CandidateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EEA16E23ECAA980098997B /* CandidateListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,11 @@
 		79EB8D6023DC5DBC003CE4E7 /* CreateQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestionViewController.swift; sourceTree = "<group>"; };
 		79EB8D6223DC63BD003CE4E7 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		79EB8D6423DC6614003CE4E7 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		79EEA16523ECA3010098997B /* CandidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateViewController.swift; sourceTree = "<group>"; };
+		79EEA16723ECA36B0098997B /* Candidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
+		79EEA16923ECA3BE0098997B /* RealmCadidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCadidate.swift; sourceTree = "<group>"; };
+		79EEA16C23ECA50B0098997B /* CandidateDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateDataStore.swift; sourceTree = "<group>"; };
+		79EEA16E23ECAA980098997B /* CandidateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,11 +135,13 @@
 				79E1B66E23D30A10000640CB /* SceneDelegate.swift */,
 				79EB8D6423DC6614003CE4E7 /* StartViewController.swift */,
 				79E1B6A423D31C98000640CB /* QuestionViewController.swift */,
+				79EEA16E23ECAA980098997B /* CandidateListViewController.swift */,
 				79E1B6A623D31E57000640CB /* QuestionListViewController.swift */,
-				79E1B6A223D31262000640CB /* Question.swift */,
+				79EEA16523ECA3010098997B /* CandidateViewController.swift */,
+				79EEA16B23ECA4780098997B /* Model */,
 				79EB8D6023DC5DBC003CE4E7 /* CreateQuestionViewController.swift */,
-				79EB8D5723DC4A40003CE4E7 /* RealmQuestion.swift */,
 				79EB8D5E23DC5AED003CE4E7 /* QuestionDataStore.swift */,
+				79EEA16C23ECA50B0098997B /* CandidateDataStore.swift */,
 				79E1B67523D30A13000640CB /* Assets.xcassets */,
 				79E1B67A23D30A13000640CB /* LaunchScreen.storyboard */,
 				79EB8D6223DC63BD003CE4E7 /* Fonts.swift */,
@@ -165,6 +177,17 @@
 				79E1B69323D30A14000640CB /* Info.plist */,
 			);
 			path = SelActionUITests;
+			sourceTree = "<group>";
+		};
+		79EEA16B23ECA4780098997B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79EB8D5723DC4A40003CE4E7 /* RealmQuestion.swift */,
+				79EEA16923ECA3BE0098997B /* RealmCadidate.swift */,
+				79E1B6A223D31262000640CB /* Question.swift */,
+				79EEA16723ECA36B0098997B /* Candidate.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,15 +328,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				79EB8D5823DC4A40003CE4E7 /* RealmQuestion.swift in Sources */,
+				79EEA16623ECA3010098997B /* CandidateViewController.swift in Sources */,
 				79E1B66D23D30A10000640CB /* AppDelegate.swift in Sources */,
+				79EEA16A23ECA3BE0098997B /* RealmCadidate.swift in Sources */,
 				79EB8D6123DC5DBC003CE4E7 /* CreateQuestionViewController.swift in Sources */,
 				79EB8D5F23DC5AED003CE4E7 /* QuestionDataStore.swift in Sources */,
 				79EB8D5D23DC598D003CE4E7 /* DataProvider.swift in Sources */,
+				79EEA16D23ECA50B0098997B /* CandidateDataStore.swift in Sources */,
 				79EB8D6523DC6614003CE4E7 /* StartViewController.swift in Sources */,
 				79E1B6A523D31C98000640CB /* QuestionViewController.swift in Sources */,
 				79E1B66F23D30A10000640CB /* SceneDelegate.swift in Sources */,
 				79E1B6A323D31262000640CB /* Question.swift in Sources */,
+				79EEA16F23ECAA980098997B /* CandidateListViewController.swift in Sources */,
 				79EB8D6323DC63BD003CE4E7 /* Fonts.swift in Sources */,
+				79EEA16823ECA36B0098997B /* Candidate.swift in Sources */,
 				79E1B6A723D31E57000640CB /* QuestionListViewController.swift in Sources */,
 				79E1B67223D30A10000640CB /* SelAction.xcdatamodeld in Sources */,
 			);

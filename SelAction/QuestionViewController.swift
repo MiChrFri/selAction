@@ -1,5 +1,9 @@
 import UIKit
 
+private enum Consts {
+  static let sideMargin: CGFloat = 18
+}
+
 class QuestionViewController: UIViewController {
   let question: Question
   
@@ -28,11 +32,19 @@ class QuestionViewController: UIViewController {
   
   private func addConstraints() {
     NSLayoutConstraint.activate([
-      self.stackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-      self.stackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-      self.stackView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
-      self.stackView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
+      self.stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Consts.sideMargin),
+      self.stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -Consts.sideMargin),
+      self.stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+      self.stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+
     ])
+    
+    for star in stars {
+      NSLayoutConstraint.activate([
+        star.widthAnchor.constraint(equalToConstant: 30),
+        star.heightAnchor.constraint(equalToConstant: 30)
+      ])
+    }
   }
   
   private func setupView() {
@@ -42,7 +54,7 @@ class QuestionViewController: UIViewController {
   
   // MARK: VIEWS
   lazy var stackView: UIStackView = {
-    let stackView = UIStackView(arrangedSubviews: [self.titleLabel, self.questionLabel, self.commentTextView])
+    let stackView = UIStackView(arrangedSubviews: [self.titleLabel, self.questionLabel, self.ratingView,  self.commentTextView])
     stackView.translatesAutoresizingMaskIntoConstraints = false
     stackView.axis = .vertical
     stackView.spacing = 8.0
@@ -61,6 +73,29 @@ class QuestionViewController: UIViewController {
     label.font = UIFont.systemFont(ofSize: 24.0)
     label.numberOfLines = 0
     return label
+  }()
+  
+  var stars = [UIView]()
+  
+  lazy var star: UIView = {
+    var star = UIView()
+    star.backgroundColor = UIColor.yellow.withAlphaComponent(0.5)
+    star.translatesAutoresizingMaskIntoConstraints = false
+    return star
+  }()
+  
+  lazy var ratingView: UIStackView = {
+     for i in 1...2 {
+       stars.append(star)
+     }
+    
+    let stackView = UIStackView(arrangedSubviews: [stars[0]])
+    stackView.axis = .horizontal
+    stackView.spacing = 30
+    stackView.alignment = .fill
+    stackView.distribution = .fill
+    
+    return stackView
   }()
   
   lazy var commentTextView: UITextView = {
