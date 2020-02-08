@@ -67,6 +67,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 extension SceneDelegate: UISplitViewControllerDelegate {
+  
+  
+  
+  
   func splitViewController(_ splitViewController: UISplitViewController, show vc: UIViewController, sender: Any?) -> Bool {
 
     detailsNavigationController.pushViewController(vc, animated: true)
@@ -78,10 +82,6 @@ extension SceneDelegate: UISplitViewControllerDelegate {
     
     let qCv =  QuestionListViewController()
     navigationController.pushViewController(qCv, animated: true)
-    
-    if let candidate = sender as? Candidate {
-      print(candidate.name)
-    }
     
     if vc is CandidateViewController {
       detailsNavigationController.setViewControllers([vc], animated: false)
