@@ -49,14 +49,14 @@ final class CreateQuestionViewController: UIViewController {
   lazy var titleTextView: UITextView = {
     let textView = UITextView()
     textView.font = UIFont.systemFont(ofSize: 42.0)
-    textView.backgroundColor = .green
+    textView.backgroundColor = .white
     return textView
   }()
   
   lazy var questionTextView: UITextView = {
     let textView = UITextView()
     textView.font = UIFont.systemFont(ofSize: 24.0)
-    textView.backgroundColor = .red
+    textView.backgroundColor = .white
     return textView
   }()
 }

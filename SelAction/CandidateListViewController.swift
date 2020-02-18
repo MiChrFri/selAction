@@ -15,7 +15,6 @@ class CandidateListViewController: UIViewController {
   init() {
     super.init(nibName: nil, bundle: nil)
     
-    populateWitDummyCandidates()
     self.addUI()
     self.addConstraints()
   }
@@ -34,6 +33,12 @@ class CandidateListViewController: UIViewController {
     tableView.register(UITableViewCell.self, forCellReuseIdentifier: "DefaultCell")
   }
   
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    loadCandidates()
+  }
+  
   private func addUI() {
     self.title = "Candidates"
     
@@ -47,7 +52,7 @@ class CandidateListViewController: UIViewController {
   }
   
   @objc func addTapped() {
-    let cVc = CreateQuestionViewController()
+    let cVc = CreateCandidateViewController()
     self.navigationController?.pushViewController(cVc, animated: true)
   }
   

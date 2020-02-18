@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		791EC34523DC46D70061D3E5 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 791EC34423DC46D70061D3E5 /* RealmSwift */; };
+		152A1ADCA56A83F662C7DA09 /* Pods_SelAction_SelActionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 786BC64F550D6B00DF80998E /* Pods_SelAction_SelActionUITests.framework */; };
+		5A2975E58CA357FFC2FB7B97 /* Pods_SelAction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A09E17CE0C6DFAD8693069 /* Pods_SelAction.framework */; };
+		7913365E23F7FA0D006EDFC8 /* CreateCandidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7913365D23F7FA0D006EDFC8 /* CreateCandidateViewController.swift */; };
 		79E1B66D23D30A10000640CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E1B66C23D30A10000640CB /* AppDelegate.swift */; };
 		79E1B66F23D30A10000640CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E1B66E23D30A10000640CB /* SceneDelegate.swift */; };
 		79E1B67223D30A10000640CB /* SelAction.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79E1B67023D30A10000640CB /* SelAction.xcdatamodeld */; };
@@ -30,6 +32,7 @@
 		79EEA16A23ECA3BE0098997B /* RealmCadidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EEA16923ECA3BE0098997B /* RealmCadidate.swift */; };
 		79EEA16D23ECA50B0098997B /* CandidateDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EEA16C23ECA50B0098997B /* CandidateDataStore.swift */; };
 		79EEA16F23ECAA980098997B /* CandidateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EEA16E23ECAA980098997B /* CandidateListViewController.swift */; };
+		C9DB86C3DD9A6F9FD35AEEE5 /* Pods_SelActionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF144C27CCBA72ABBF440BF1 /* Pods_SelActionTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		100C9318058A774BEF48E35B /* Pods-SelAction-SelActionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelAction-SelActionUITests.debug.xcconfig"; path = "Target Support Files/Pods-SelAction-SelActionUITests/Pods-SelAction-SelActionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D076FE0B62C985A2D1DE13A /* Pods-SelActionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelActionTests.release.xcconfig"; path = "Target Support Files/Pods-SelActionTests/Pods-SelActionTests.release.xcconfig"; sourceTree = "<group>"; };
+		2573F24E862765981E8AD7D0 /* Pods-SelAction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelAction.debug.xcconfig"; path = "Target Support Files/Pods-SelAction/Pods-SelAction.debug.xcconfig"; sourceTree = "<group>"; };
+		35A09E17CE0C6DFAD8693069 /* Pods_SelAction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelAction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		786BC64F550D6B00DF80998E /* Pods_SelAction_SelActionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelAction_SelActionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7913365D23F7FA0D006EDFC8 /* CreateCandidateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCandidateViewController.swift; sourceTree = "<group>"; };
 		79E1B66923D30A10000640CB /* SelAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E1B66C23D30A10000640CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79E1B66E23D30A10000640CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +88,10 @@
 		79EEA16923ECA3BE0098997B /* RealmCadidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCadidate.swift; sourceTree = "<group>"; };
 		79EEA16C23ECA50B0098997B /* CandidateDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateDataStore.swift; sourceTree = "<group>"; };
 		79EEA16E23ECAA980098997B /* CandidateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateListViewController.swift; sourceTree = "<group>"; };
+		A5E23B4AC679AB526FB1D427 /* Pods-SelAction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelAction.release.xcconfig"; path = "Target Support Files/Pods-SelAction/Pods-SelAction.release.xcconfig"; sourceTree = "<group>"; };
+		AD6993CCA68751F9FA046D5B /* Pods-SelActionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelActionTests.debug.xcconfig"; path = "Target Support Files/Pods-SelActionTests/Pods-SelActionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD82DEAE0400E801B8410B70 /* Pods-SelAction-SelActionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelAction-SelActionUITests.release.xcconfig"; path = "Target Support Files/Pods-SelAction-SelActionUITests/Pods-SelAction-SelActionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EF144C27CCBA72ABBF440BF1 /* Pods_SelActionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelActionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				791EC34523DC46D70061D3E5 /* RealmSwift in Frameworks */,
+				5A2975E58CA357FFC2FB7B97 /* Pods_SelAction.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DB86C3DD9A6F9FD35AEEE5 /* Pods_SelActionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152A1ADCA56A83F662C7DA09 /* Pods_SelAction_SelActionUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +129,8 @@
 				79E1B68523D30A14000640CB /* SelActionTests */,
 				79E1B69023D30A14000640CB /* SelActionUITests */,
 				79E1B66A23D30A10000640CB /* Products */,
+				891B2240D9B3179BA467A34B /* Pods */,
+				C08CFDCE653E033841C3888D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +157,7 @@
 				79EEA16523ECA3010098997B /* CandidateViewController.swift */,
 				79EEA16B23ECA4780098997B /* Model */,
 				79EB8D6023DC5DBC003CE4E7 /* CreateQuestionViewController.swift */,
+				7913365D23F7FA0D006EDFC8 /* CreateCandidateViewController.swift */,
 				79EB8D5E23DC5AED003CE4E7 /* QuestionDataStore.swift */,
 				79EEA16C23ECA50B0098997B /* CandidateDataStore.swift */,
 				79E1B67523D30A13000640CB /* Assets.xcassets */,
@@ -190,6 +208,29 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		891B2240D9B3179BA467A34B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2573F24E862765981E8AD7D0 /* Pods-SelAction.debug.xcconfig */,
+				A5E23B4AC679AB526FB1D427 /* Pods-SelAction.release.xcconfig */,
+				100C9318058A774BEF48E35B /* Pods-SelAction-SelActionUITests.debug.xcconfig */,
+				CD82DEAE0400E801B8410B70 /* Pods-SelAction-SelActionUITests.release.xcconfig */,
+				AD6993CCA68751F9FA046D5B /* Pods-SelActionTests.debug.xcconfig */,
+				1D076FE0B62C985A2D1DE13A /* Pods-SelActionTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C08CFDCE653E033841C3888D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35A09E17CE0C6DFAD8693069 /* Pods_SelAction.framework */,
+				786BC64F550D6B00DF80998E /* Pods_SelAction_SelActionUITests.framework */,
+				EF144C27CCBA72ABBF440BF1 /* Pods_SelActionTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,18 +238,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E1B69623D30A14000640CB /* Build configuration list for PBXNativeTarget "SelAction" */;
 			buildPhases = (
+				C44BCE9D5130683CCB0ABDA7 /* [CP] Check Pods Manifest.lock */,
 				79E1B66523D30A10000640CB /* Sources */,
 				79E1B66623D30A10000640CB /* Frameworks */,
 				79E1B66723D30A10000640CB /* Resources */,
+				45F1E53DFAC60729B9D76002 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SelAction;
-			packageProductDependencies = (
-				791EC34423DC46D70061D3E5 /* RealmSwift */,
-			);
 			productName = SelAction;
 			productReference = 79E1B66923D30A10000640CB /* SelAction.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E1B69923D30A14000640CB /* Build configuration list for PBXNativeTarget "SelActionTests" */;
 			buildPhases = (
+				6F45B9F0873DE53615A2DE8F /* [CP] Check Pods Manifest.lock */,
 				79E1B67E23D30A14000640CB /* Sources */,
 				79E1B67F23D30A14000640CB /* Frameworks */,
 				79E1B68023D30A14000640CB /* Resources */,
@@ -235,9 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E1B69C23D30A14000640CB /* Build configuration list for PBXNativeTarget "SelActionUITests" */;
 			buildPhases = (
+				4A78D04B68AAF839458E1B65 /* [CP] Check Pods Manifest.lock */,
 				79E1B68923D30A14000640CB /* Sources */,
 				79E1B68A23D30A14000640CB /* Frameworks */,
 				79E1B68B23D30A14000640CB /* Resources */,
+				52F463EA9043AC73F3E3C090 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,9 +324,6 @@
 				Base,
 			);
 			mainGroup = 79E1B66023D30A0F000640CB;
-			packageReferences = (
-				791EC34323DC46D70061D3E5 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
-			);
 			productRefGroup = 79E1B66A23D30A10000640CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -322,6 +362,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45F1E53DFAC60729B9D76002 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SelAction/Pods-SelAction-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SelAction/Pods-SelAction-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SelAction/Pods-SelAction-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A78D04B68AAF839458E1B65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SelAction-SelActionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52F463EA9043AC73F3E3C090 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SelAction-SelActionUITests/Pods-SelAction-SelActionUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SelAction-SelActionUITests/Pods-SelAction-SelActionUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SelAction-SelActionUITests/Pods-SelAction-SelActionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F45B9F0873DE53615A2DE8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SelActionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C44BCE9D5130683CCB0ABDA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SelAction-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79E1B66523D30A10000640CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -337,6 +480,7 @@
 				79EEA16D23ECA50B0098997B /* CandidateDataStore.swift in Sources */,
 				79EB8D6523DC6614003CE4E7 /* StartViewController.swift in Sources */,
 				79E1B6A523D31C98000640CB /* QuestionViewController.swift in Sources */,
+				7913365E23F7FA0D006EDFC8 /* CreateCandidateViewController.swift in Sources */,
 				79E1B66F23D30A10000640CB /* SceneDelegate.swift in Sources */,
 				79E1B6A323D31262000640CB /* Question.swift in Sources */,
 				79EEA16F23ECAA980098997B /* CandidateListViewController.swift in Sources */,
@@ -506,6 +650,7 @@
 		};
 		79E1B69723D30A14000640CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2573F24E862765981E8AD7D0 /* Pods-SelAction.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SelAction/SelAction.entitlements;
@@ -529,6 +674,7 @@
 		};
 		79E1B69823D30A14000640CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5E23B4AC679AB526FB1D427 /* Pods-SelAction.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SelAction/SelAction.entitlements;
@@ -552,6 +698,7 @@
 		};
 		79E1B69A23D30A14000640CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD6993CCA68751F9FA046D5B /* Pods-SelActionTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -574,6 +721,7 @@
 		};
 		79E1B69B23D30A14000640CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D076FE0B62C985A2D1DE13A /* Pods-SelActionTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -596,6 +744,7 @@
 		};
 		79E1B69D23D30A14000640CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 100C9318058A774BEF48E35B /* Pods-SelAction-SelActionUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -616,6 +765,7 @@
 		};
 		79E1B69E23D30A14000640CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD82DEAE0400E801B8410B70 /* Pods-SelAction-SelActionUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -674,25 +824,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		791EC34323DC46D70061D3E5 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-cocoa";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.3.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		791EC34423DC46D70061D3E5 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 791EC34323DC46D70061D3E5 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
-			productName = RealmSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		79E1B67023D30A10000640CB /* SelAction.xcdatamodeld */ = {

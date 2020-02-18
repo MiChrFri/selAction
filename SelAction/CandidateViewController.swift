@@ -12,7 +12,7 @@ class CandidateViewController: UIViewController {
   weak var delegate: CandidateViewControllerDelegate?
   
   convenience init() {
-    self.init(with: Candidate(name: "Hola", position: "😃", questions: []))
+    self.init(with: Candidate(name: "WELCOME", position: "", questions: []))
   }
   
   init(with candidate: Candidate) {
